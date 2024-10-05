@@ -30,3 +30,14 @@ print(x)  # prints 1432.2448979591834
 # Standard Deviation is often represented by the symbol Sigma: σ
 # Variance is often represented by the symbol Sigma Squared: σ2
 
+# ------------------- Percentiles -------------------------
+# What are Percentiles?
+# Percentiles are used in statistics to give you a number that describes the value that a given percent of the values are lower than.
+# Example: Let's say we have an array of the ages of all the people that live in a street.
+
+ages = [5, 31, 43, 48, 50, 41, 7, 11, 15, 39, 80, 82, 32, 2, 8, 6, 25, 36, 27, 61, 31]
+x = numpy.percentile(ages, 75)
+print(x)  # prints 43
+
+x = numpy.percentile(ages, 90)
+print(x)  # prints 61
